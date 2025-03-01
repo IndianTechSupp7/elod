@@ -1,0 +1,14 @@
+személyi edzők                 -> táblázat - beosztás
+személyi edző időpont foglalás -> form
+
+
+-backend
+  személyi edzők database
+
+- HomePage
+  nyitvatartás
+  bérletek
+  berendezés
+
+-EquipmentPage
+  felszereles reszlegeesebb leírása

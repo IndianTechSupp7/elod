@@ -1,0 +1,29 @@
+.body-image {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.body-image-wrapper::after {
+  content: " ";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: inherit;
+  transition: 100ms ease;
+  border-radius: 16px;
+  font-size: small;
+}
+.body-image-wrapper{
+  align-self: flex-start;
+}
+
+.body-image-wrapper:hover::after {
+  content: "Felszerelések megnézése";
+  background: rgba(0, 0, 0, 0.4);
+  font-size: var(--text-3xl);
+}

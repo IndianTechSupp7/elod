@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/*
+pthin: ["Poppins-Thin", "sans-serif"],
+pextralight: ["Poppins-ExtraLight", "sans-serif"],
+plight: ["Poppins-Light", "sans-serif"],
+pregular: ["Poppins-Regular", "sans-serif"],
+pmedium: ["Poppins-Medium", "sans-serif"],
+psemibold: ["Poppins-SemiBold", "sans-serif"],
+pbold: ["Poppins-Bold", "sans-serif"],
+pextrabold: ["Poppins-ExtraBold", "sans-serif"],
+pblack: ["Poppins-Black", "sans-serif"],
+      },
+*/
+
+@font-face {
+  font-family: pregular;
+  src: url("assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: psemibold;
+  src: url("assets/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: pbold;
+  src: url("assets/fonts/Poppins-Bold.ttf");
+}
+
+@theme {
+  --font-pregular: pregular, sans-serif; /* Regular (400) */
+  --font-psemibold: psemibold, sans-serif; /* SemiBold (600) */
+  --font-pbold: pbold, sans-serif; /* Bold (700) */
+
+  --color-gradient-start: rgba(18, 22, 28, 0);
+
+  --color-breakpoint-3xl: 1920px;
+  --color-primary: #5122f9;
+  --color-secoundary: #31363F;
+  --color-tetrary: #222831;
+  --color-background: #12161C;
+  --color-text: #fff;
+}
+
+.dark {
+  --color-primary: #5122f9; /* Darker Blue */
+  --color-secondary: #7e22ce; /* Darker Purple */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE/Edge (older versions) */
+html {
+  -ms-overflow-style: none;
+}
