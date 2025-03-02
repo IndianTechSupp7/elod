@@ -1,3 +1,3 @@
 # React + Vite
 
-ugy tudja elindítani hogy 
+npm run dev
