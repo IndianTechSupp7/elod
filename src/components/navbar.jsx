@@ -28,14 +28,20 @@ function Navbar() {
       <div className="flex">
         <button
           onClick={handleNyitvatartasClick}
-          className="nav-element text-xl"
+          className="nav-element text-xl "
         >
           <li>Nyitvatartás</li>
         </button>
-        <Link className={"nav-element text-xl"} to="/register">
+        <Link
+          className={"flex nav-element text-xl items-center"}
+          to="/register"
+        >
           <li>Bérlet</li>
         </Link>
-        <Link className={"nav-element text-xl"} to="/trainers">
+        <Link
+          className={"nav-element text-xl flex items-center"}
+          to="/trainers"
+        >
           <li>Személyi edzők</li>
         </Link>
       </div>

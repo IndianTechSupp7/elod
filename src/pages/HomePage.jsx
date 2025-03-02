@@ -4,6 +4,7 @@ import secoundary_img from "../assets/gym_images/3.png";
 import OfferCard from "../components/OfferCard";
 import Footer from "../components/Footer";
 import OpenSection from "../components/open";
+import TrainersComp from "../components/trainers";
 import "../styles/home.css";
 
 function HomePage() {
@@ -46,6 +47,9 @@ function HomePage() {
         >
           <img className="body-image" src={secoundary_img} alt="" />
         </div>
+      </section>
+      <section>
+        <TrainersComp></TrainersComp>
       </section>
       <section className="w-full h-full bg-background flex flex-col items-center">
         <div className="w-full flex justify-center p-10 text-3xl font-psemibold">

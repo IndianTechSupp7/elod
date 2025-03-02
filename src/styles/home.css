@@ -13,7 +13,6 @@
   left: 0;
   align-items: center;
   justify-content: center;
-  z-index: inherit;
   transition: 100ms ease;
   border-radius: 16px;
   font-size: small;

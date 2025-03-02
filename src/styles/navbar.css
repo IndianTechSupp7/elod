@@ -16,29 +16,9 @@ li::after{
   width: 0;
   height: 2px;
   background-color: var(--color-text);
-  animation: onEnter 200ms ease-out forwards;
+  transition: 200ms ease;
 }
 
 .nav-element:hover li::after{
-  animation: onLeave 200ms ease-out forwards;
-}
-
-@keyframes onLeave {
-  100%{
-    width: 100%;
-    left: 0px;
-  }
-  0%{
-    width: 0%;
-    left: 100%;
-  }
-}
-
-@keyframes onEnter {
-  0%{
-    width: 100%;
-  }
-  100%{
-    width: 0%;
-  }
+  width: 100%;
 }
