@@ -9,6 +9,7 @@ ha nincs akkor navigáljon a `dist/` könyvtárba majd indítson egy webservert 
 py -m http.server
 ```
 > ⚠ Ha a `dist/index.html` -t webserver nélkül indítja el nem fog működni!
+
 > ⚠ fontos hogy a webservert a `dist/` könyvtárból indítsa!
  
 # Itt van a weboldal terv
