@@ -44,6 +44,12 @@ function Navbar() {
         >
           <li>Személyi edzők</li>
         </Link>
+        <Link
+          className={"nav-element text-xl flex items-center"}
+          to="/equipment"
+        >
+          <li>Felszerelés</li>
+        </Link>
       </div>
     </div>
   );

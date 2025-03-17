@@ -1,0 +1,36 @@
+.gallery-img {
+  position: relative; /* Ensure the stacking context exists */
+}
+
+
+.gallery-img:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 120%; /* Slightly bigger to make blur visible */
+  height: 120%;
+  background-color: white;
+  opacity: 0.1;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.gallery-images {
+  position: relative; /* Needed to keep pseudo-elements visible */
+  z-index: 1; /* Ensures it stays above the blurred effect */
+}
+
+.gallery-images::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 120%; /* Slightly bigger to make blur visible */
+  height: 120%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+
