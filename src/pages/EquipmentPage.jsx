@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/equipment.css";
 
+// képek sorbarendezéséhez (alapjáraton a sort.py script rendezi az egészet)
 const handleImages = ({ count, folder, setImages }) => {
   const sortedImages = useRef([]);
 
@@ -39,20 +40,16 @@ const handleImages = ({ count, folder, setImages }) => {
 const Grid = ({ folder = "/src/assets/gym_images/equipment", count = 25 }) => {
   const [images, setImages] = useState([]);
 
-  /* 
   useEffect(() => {
-    const imageList = [[], [], []];
+    let imgList = [[], [], []]
     for (let i = 1; i <= count; i++) {
       let index = (i - 1) % 3;
-      imageList[index].push(`${folder}/${i}.jpg`);
+      imgList[index]?.push(`${folder}/${i}.jpg`);
     }
-    setImages(imageList);
-  }, [count]);
+    setImages(imgList)
+  }, []);
 
-  
-  */
-
-  handleImages({ count, folder, setImages });
+  // handleImages({ count, folder, setImages });
 
   return (
     <div className="flex justify-center pt-30 gap-5 w-[60%] gallery-images relative">
