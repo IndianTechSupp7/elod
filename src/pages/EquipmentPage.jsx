@@ -49,6 +49,7 @@ const Grid = ({ folder = "/src/assets/gym_images/equipment", count = 25 }) => {
     setImages(imgList)
   }, []);
 
+  // ezt a sort csak akkor kommentelje ki ha szeretné hogy a képek minden frissítésnél újra rendeződjenek
   // handleImages({ count, folder, setImages });
 
   return (

@@ -5,6 +5,9 @@ import OfferCard from "../components/OfferCard";
 import Footer from "../components/Footer";
 import OpenSection from "../components/open";
 import TrainersComp from "../components/trainers";
+import VideoOnView from "../components/video";
+import SlideInText from "../components/slideInText";
+import v1 from "../assets/gym_images/gym_media/1.mp4";
 import "../styles/home.css";
 
 function HomePage() {
@@ -12,22 +15,25 @@ function HomePage() {
   return (
     <div className="select-none home-page flex items-center justify-center flex-col bg-background">
       <section className="relative max-h-[800px] w-full">
-        <img
+      <VideoOnView src={v1} width="100%" style="relative max-h-[800px] object-cover" />
+        {/* <img
           className="main-img max-h-[800px] w-full object-cover object-[0%_10%]"
           src={main_img}
           alt=""
-        />
+        /> */}
         <div
           className="w-full h-full absolute top-0 left-0 
         bg-gradient-to-b from-background via-gradient-start to-background"
         />
-        <span className="absolute bottom-10 pl-10 lg:text-3xl text-xl font-psemibold tracking-[0.17em] flex flex-row justify-center w-full">
-          Legjobb{" "}
-          <span className="bg-gradient-to-r from-cyan-300 to-indigo-500 text-transparent bg-clip-text pl-2.5 pr-2.5 md:text-3xl text-2xl">
-            GYM
-          </span>{" "}
-          amit talalsz itten erre
-        </span>
+        <SlideInText>
+          <span className="absolute bottom-10 pl-10 lg:text-3xl text-xl font-psemibold tracking-[0.17em] flex flex-row justify-center w-full">
+            Legjobb{" "}
+            <span className="bg-gradient-to-r from-cyan-300 to-indigo-500 text-transparent bg-clip-text pl-2.5 pr-2.5 md:text-3xl text-2xl">
+              GYM
+            </span>{" "}
+            amit talalsz itten erre
+          </span>
+        </SlideInText>
       </section>
       <section className="flex h-full w-full bg-background xl:p-30 p-10 lg:flex-row flex-col-reverse justify-between">
         <div className="w-full flex flex-col lg:pr-[20%] lg:p-10 pt-10 lg:h-[500px] justify-between">
@@ -48,7 +54,7 @@ function HomePage() {
           <img className="body-image" src={secoundary_img} alt="" />
         </div>
       </section>
-      <section>
+      <section className="w-full">
         <TrainersComp></TrainersComp>
       </section>
       <section className="w-full h-full bg-background flex flex-col items-center">
