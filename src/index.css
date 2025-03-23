@@ -43,7 +43,7 @@ pblack: ["Poppins-Black", "sans-serif"],
 
 .dark {
   --color-primary: #5122f9; /* Darker Blue */
-  --color-secondary: #7e22ce; /* Darker Purple */
+  --color-secondary: #894aff; /* Darker Purple */
 }
 
 ::-webkit-scrollbar {

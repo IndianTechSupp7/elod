@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const SlideInText = ({ children, className }) => {
+const SlideInText = ({ children, className, initial={opacity: 0, y: -100}, animate={opacity: 1, y: 0}, duration=0.3, delay=0.0 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -9,9 +9,9 @@ const SlideInText = ({ children, className }) => {
     <motion.div
       className={className}
       ref={ref}
-      initial={{ opacity: 0, y: -100 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      initial={initial}
+      animate={isInView ? animate : {}}
+      transition={{ duration: duration, ease: "easeOut", delay: delay}}
     >
       {children}
     </motion.div>
