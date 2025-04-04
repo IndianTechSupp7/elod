@@ -36,7 +36,7 @@ const RegistationPage = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-4 focus:ring-primary"
+            className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-4 focus:ring-primary focus:border-0"
             required
           />
         </div>
@@ -49,7 +49,7 @@ const RegistationPage = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-4 focus:ring-primary"
+            className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-4 focus:ring-primary focus:border-0"
             required
           />
         </div>
@@ -62,7 +62,7 @@ const RegistationPage = () => {
             value={formData.message}
             onChange={handleChange}
             rows="4"
-            className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-4 focus:ring-primary"
+            className="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-4 focus:ring-primary focus:border-0"
             required
           ></textarea>
         </div>
